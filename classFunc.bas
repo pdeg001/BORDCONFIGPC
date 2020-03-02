@@ -19,7 +19,7 @@ Sub TryConnectFtp(ipNumber As String) As ResumableSub
 	ftp.SetKnownHostsStore(Starter.hostPath, "hosts.txt")
 	
 
-	ftp.DownloadFile("/home/pi/44/ver.pdg", Starter.hostPath, "ver.pdg")
+	ftp.DownloadFile("/home/pi/score/ver.pdg", Starter.hostPath, "ver.pdg")
 
 	wait for ftp_DownloadCompleted (ServerPath As String, Success As Boolean)
 	Return Success

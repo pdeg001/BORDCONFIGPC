@@ -153,7 +153,7 @@ Sub updateBorden
 		sftp.Initialize("ftp", "pi", "0", data(0), 22)
 		sftp.SetKnownHostsStore(Starter.hostPath, "hosts.txt")
 	
-		sftp.UploadFile(Starter.hostPath, Starter.updateFile,"/home/pi/44/44.jar")
+		sftp.UploadFile(Starter.hostPath, Starter.updateFile,"/home/pi/score/44.jar")
 	
 
 		Wait For ftp_UploadCompleted (ServerPath As String, Success As Boolean)
@@ -173,7 +173,7 @@ Sub updateBorden
 		sftp.Initialize("ftp", "pi", "0", data(0), 22)
 		sftp.SetKnownHostsStore(Starter.hostPath, "hosts.txt")
 		
-		sftp.UploadFile(Starter.hostPath, "lstVer.pdg", "/home/pi/44/ver.pdg")
+		sftp.UploadFile(Starter.hostPath, "lstVer.pdg", "/home/pi/score/ver.pdg")
 
 		Wait For ftp_UploadCompleted (ServerPath As String, Success As Boolean)
 		If Success = False Then
@@ -193,7 +193,7 @@ Sub updateBorden
 		sftp.Initialize("ftp", "pi", "0", data(0), 22)
 		sftp.SetKnownHostsStore(Starter.hostPath, "hosts.txt")
 		File.WriteString(Starter.hostPath, "upd.pdg", "")
-		sftp.UploadFile(Starter.hostPath, "upd.pdg", "/home/pi/44/upd.pdg")
+		sftp.UploadFile(Starter.hostPath, "upd.pdg", "/home/pi/score/upd.pdg")
 
 		Wait For ftp_UploadCompleted (ServerPath As String, Success As Boolean)
 		If Success = False Then

@@ -91,7 +91,7 @@ End Sub
 
 
 Sub ftp_PromptYesNo (Message As String)
-	Log(Message)
+	'Log(Message)
 	
 	ftp.SetPromptResult(True)
 End Sub
@@ -121,8 +121,8 @@ Sub retrieveConfig(ipNumber As String)
 '
 '	Wait For ListCompleted (ServerPath As String, Success As Boolean, Folders() As SFtpEntry, Files() As SFtpEntry)
 
-	ftp.DownloadFile("/home/pi/44/cnf.44", Starter.hostPath, "cnf.44")
-	ftp.DownloadFile("/home/pi/44/ver.pdg", Starter.hostPath, "ver.pdg")
+	ftp.DownloadFile("/home/pi/score/cnf.44", Starter.hostPath, "cnf.44")
+'	ftp.DownloadFile("/home/pi/44/ver.pdg", Starter.hostPath, "ver.pdg")
 '	ftp.DownloadFile("/home/pi/score/cnf.44", Starter.hostPath, "cnf.44")
 '	ftp.DownloadFile("/home/pi/score/ver.pdg", Starter.hostPath, "ver.pdg")
 	
@@ -172,6 +172,7 @@ Sub btn_save_Click
 			lstBord = Regex.Split("\|", lstStr)
 			naam = lstBord.Get(0)
 			ip = lstBord.Get(1)
+			Log("IPNUMBER " & ip)
 			
 			clsPutJson.bordNaam = naam
 			clsPutJson.ipNumber = ip

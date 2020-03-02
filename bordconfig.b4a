@@ -1,4 +1,4 @@
-﻿Build1=Marcel,nl.pdeg.bordconfig,Marcel
+﻿Build1=Marcel,nl.pdeg.bordconfigpc,Marcel
 Build2=Sale,nl.pdeg.bordconfig,Sale
 File1=Arial.ttf
 File10=confScreenSaver.bal
@@ -80,7 +80,7 @@ NumberOfModules=17
 Version=9.801
 @EndOfDesignText@
 #Region  Project Attributes 
-	#ApplicationLabel: Bord config
+	#ApplicationLabel: Bord config Pc
 	#VersionCode: 1
 	#VersionName: 0.9.5
 	'SupportedOrientations possible values: unspecified, landscape or portrait.

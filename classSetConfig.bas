@@ -88,7 +88,7 @@ Sub pushConfig
 	ftp.SetKnownHostsStore(Starter.hostPath, "hosts.txt")
 	updateResult = 0
 	
-	ftp.UploadFile(Starter.hostPath, "cnf.44", "/home/pi/44/cnf.44")
+	ftp.UploadFile(Starter.hostPath, "cnf.44", "/home/pi/score/cnf.44")
 	'ftp.UploadFile(Starter.hostPath, "cnf.44", "/home/pi/score/cnf.44")
 	Wait For ftp_UploadCompleted (ServerPath As String, Success As Boolean)
 	If Success = False Then

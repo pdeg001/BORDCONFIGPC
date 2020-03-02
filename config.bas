@@ -341,8 +341,8 @@ Sub retrieveConfig(ipNumber As String)
 		Return
 	End Try
 
-	ftp.DownloadFile("/home/pi/44/cnf.44", Starter.hostPath, "cnf.44")
-	ftp.DownloadFile("/home/pi/44/ver.pdg", Starter.hostPath, "ver.pdg")
+	ftp.DownloadFile("/home/pi/score/cnf.44", Starter.hostPath, "cnf.44")
+	'ftp.DownloadFile("/home/pi/44/ver.pdg", Starter.hostPath, "ver.pdg")
 	
 	wait for ftp_DownloadCompleted (ServerPath As String, Success As Boolean)
 	If Success = False Then
